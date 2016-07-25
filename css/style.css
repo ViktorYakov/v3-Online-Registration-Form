@@ -1,0 +1,255 @@
+/***********Basic Styles *****************/
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Indie Flower', cursive;
+	color: #384047;
+	background: tomato;
+
+}
+
+.wrap {
+	width: 95%;
+	margin: auto;
+}
+
+form {
+	border-top: 2px solid;
+}
+
+footer {
+	margin-bottom: 0;
+	text-align: center;
+	color: white;
+	background-color: #384047;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+footer p {
+	margin-bottom: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+#summary {
+	margin: 0;
+	padding-top: 13px;
+	background-color: #384047; 
+	color: white;
+	height: 70px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.text  {
+	width: 100%;
+	text-align: center;
+	border-bottom: 5px solid;
+	margin-bottom: 3px;
+}
+
+/***********End of Basic Styles *****************/
+
+/***********Feildset Style *****************/
+fieldset {
+	width: 100%;
+	padding: 0;
+	border: none
+}
+
+#fieldset1 {
+	border-bottom: 3px solid;
+}
+
+#fieldset1 legend {
+	padding-top: 10px;
+}
+
+#fieldset2  label{
+	margin-bottom: 0;
+}
+
+#fieldset2 legend {
+	padding: 15px 0 0;
+	margin-bottom: 0;
+}
+
+#nletterwish {
+	margin:10px 0 8px 0;
+}
+
+#nletterform {
+	margin: 10px 0 10px 0;
+}
+
+label[for="topics"] {
+	margin: 11px 0 8px 0;
+}
+
+legend {
+	width: 100%;
+	font-size: 1.1em;
+	font-weight: 800;
+	color: #000;
+	margin-bottom: 10px;
+}
+
+/***********End of Feildset Style *****************/
+
+/***********Label Input Textfield Button Style *****************/
+
+input[type="text"],
+input[type="checkbox"],
+input[type="radio"],
+input[type="submit"],
+input[type="date"],
+textarea,
+select {
+	border-radius: 5px;
+	font-size: 16px;
+	height: auto;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	background-color: #e8eeef;
+	color: #8a97a0;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 40px;
+}
+
+input[type="text"],
+input[type="submit"],
+input[type="date"],
+select {
+	width: 100%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	margin: 0;
+	float: left;
+
+}
+
+#topics {
+	width: 100%;
+	height: 90px;
+	margin: 15px 0 10px;
+}
+
+input[id="zcode"] {
+	width: 60%;
+	margin-bottom: 25px;
+}
+
+label {
+	margin-bottom: 5px;
+	float: left;
+}
+
+label[for="zcode"] {
+	width: 100%;
+}
+
+button {
+	width: 100%;
+	height: 50px;
+	float: left;
+	background-color: #66CDAA;
+	border-radius: 5px;
+	border: none;
+	color: white;
+	font-size: 22px;
+	font-weight: 600;
+}
+
+/***********Label Input Textfield Button Select Style *****************/
+select:focus,
+input:focus,
+textarea:focus,
+input[id="phonenumber"]:focus,
+input[id="city"]:focus  {
+	background: #708090;
+	color: white;
+	box-shadow: none;
+	}
+
+input[type="radio"]:checked:before {
+    display: block;
+    background: red;
+}
+
+input[type="text"]:focus{
+text-align: right;
+}
+
+input[type='radio']:checked + label ,
+input[type='checkbox']:checked  + label {
+	font-weight: bolder;
+	font-style: italic;
+}
+
+select,
+textarea,
+input {
+	background: #e8eeef;
+}
+
+/****End Label Input Textfield Button Select Style ******/
+
+/***********End of Label Input Textfield Button Styles *****************/
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 760px) {
+	body {
+		background: orange;
+	}
+	.wrap {
+		margin: auto;
+		max-width: 600px;
+	}
+	fieldset {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: none
+	}
+	input[type="text"],
+	input[type="submit"],
+	input[type="date"],
+	select {
+	width: 65%;
+	float: right;
+	}
+	label[for="zcode"] {
+	width: 35%;
+	
+	}
+	label[for="name"],
+	label[for="bdate"],
+	label[for="email"],
+	label[for="phonenumber"],
+	label[for="streetaddress"],
+	label[for="city"],
+	label[for="state"],
+	label[for="zcode"]{
+		text-align: left;
+		clear: both;
+		float:left;
+	}
+}
+
+/* ================================= 
+  End Media Queries
+==================================== */
